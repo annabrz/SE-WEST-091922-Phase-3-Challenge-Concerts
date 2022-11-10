@@ -15,6 +15,10 @@ la_band = Band.create(name: "Muna", hometown: "LA")
 chi_band = Band.create(name: "Noname", hometown: "Chicago")
 
 puts "Creating Concerts..."
+a_concert = Concert.create(band_id: ny_band.id, venue_id: la_venue.id, date: "February 4")
+b_concert = Concert.create(band_id: la_band.id, venue_id: chi_venue.id, date: "October 6")
+c_concert = Concert.create(band_id: chi_band.id, venue_id: nyc_venue.id, date: "January 17" )
+d_concert = Concert.create(band_id: la_band.id, venue_id: la_venue.id, date: "January 18" )
 # ****************************************************************
 # * TODO: create concerts! Remember, a concert belongs to a band *
 # * and a concert belongs to a venue.                            *
